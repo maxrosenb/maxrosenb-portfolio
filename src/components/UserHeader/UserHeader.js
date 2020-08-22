@@ -15,7 +15,7 @@ const UserHeader = ({ user }) => {
           <h2>{user.basics.name}</h2>
           <h4>
             <a
-              href={`https://gitconnected.com/${user.basics.username}`}
+              href={`https://github.com/${user.basics.username}`}
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -29,7 +29,7 @@ const UserHeader = ({ user }) => {
       </Header>
       <div>
         <ViewResumeLink
-          href={`http://people.reed.edu/~maxrosenb/`}
+          href={`https://gitconnected.com/${user.basics.username}/resume`}
           target="_blank"
           rel="noopener noreferrer"
         >

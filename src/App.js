@@ -6,7 +6,6 @@ import './App.css';
 function App() {
   const [user, setUser] = React.useState(null);
   React.useEffect(() => {
-    // NOTE: Use your username below
     fetch('https://gitconnected.com/v1/portfolio/maxrosenb')
       .then(res => res.json())
       .then(user => {
