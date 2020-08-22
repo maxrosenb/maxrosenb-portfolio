@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Pill } from '../../styles';
-import { ProjectItem, ProjectTitle, SkillContainer } from './styles';
+import { ProjectItem, ProjectTitle, SkillContainer, ViewGitLink } from './styles';
 
 const Projects = ({ user }) => {
   return (
@@ -18,6 +18,15 @@ const Projects = ({ user }) => {
                   <Pill key={j}>{item}</Pill>
                 ))}
               </SkillContainer>
+              <div>
+                <ViewGitLink
+                href={`${project.githubUrl}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span>view on GitHub</span>
+                </ViewGitLink>
+              </div>
             </ProjectItem>
           ))}
         </ul>
