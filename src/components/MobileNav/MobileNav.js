@@ -44,7 +44,7 @@ const MobileNav = () => {
           <NavButton
             hasIconOnly
             renderIcon={Music32}
-            iconDescription="Education"
+            iconDescription="Music"
             tooltipPosition="bottom"
           />
         </NavLink>
