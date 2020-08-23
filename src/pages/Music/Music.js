@@ -25,10 +25,21 @@ const Music = ({ user }) => {
         </div>
 
         <ul>
+        
+          <MusicItem>
+            <SongTitle>Kokomo Beach - Max Rosenberg</SongTitle>
+            <br />
+            <Player sound="kokomo.mp3"></Player>
+          </MusicItem>
           <MusicItem>
             <SongTitle>Come Around - Max Rosenberg</SongTitle>
             <br />
             <Player sound="around.mp3"></Player>
+          </MusicItem>
+          <MusicItem>
+            <SongTitle>It Snowed - Max Rosenberg</SongTitle>
+            <br />
+            <Player sound="snow.mp3"></Player>
           </MusicItem>
           <MusicItem>
             <SongTitle>Natty - Max Rosenberg</SongTitle>
@@ -39,17 +50,8 @@ const Music = ({ user }) => {
             <br />
             <Player sound="surround.mp3"></Player>
           </MusicItem>
-          <MusicItem>
-            <SongTitle>It Snowed - Max Rosenberg</SongTitle>
-            <br />
-            <Player sound="snow.mp3"></Player>
-          </MusicItem>
-          <MusicItem>
-            <SongTitle>Don't Wanna Wait - Max Rosenberg, Samuel Norrie, Esai Sideeq</SongTitle>
-            <br />
-            <Player sound="wait.mp3"></Player>
-          </MusicItem>
-        </ul>
+          
+          </ul>
         
     </Layout>
   );
