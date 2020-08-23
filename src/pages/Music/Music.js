@@ -4,29 +4,14 @@ import { SectionTitle, Paragraph } from '../../styles';
 import { SongTitle, MusicItem } from './styles';
 import AudioPlayer from "react-h5-audio-player";
 
-const ComePlayer = () => (
+const Player = ({sound}) => (
   <AudioPlayer
-    src="/around.mp3"
+    src={sound}
     onPlay={e => console.log("onPlay")}
     // other props here
   />
 );
 
-const NattyPlayer = () => (
-  <AudioPlayer
-    src="/natty.mp3"
-    onPlay={e => console.log("onPlay")}
-    // other props here
-  />
-);
-
-const SurroundPlayer = () => (
-  <AudioPlayer
-    src="/surround.mp3"
-    onPlay={e => console.log("onPlay")}
-    // other props here
-  />
-);
 const Music = ({ user }) => {
 
   return (
@@ -43,16 +28,16 @@ const Music = ({ user }) => {
           <MusicItem>
             <SongTitle>Come Around - Max Rosenberg</SongTitle>
             <br />
-            <ComePlayer></ComePlayer>
+            <Player sound="around.mp3"></Player>
           </MusicItem>
           <MusicItem>
             <SongTitle>Natty - Max Rosenberg</SongTitle>
-            <NattyPlayer></NattyPlayer>
+            <Player sound="natty.mp3"></Player>
           </MusicItem>
           <MusicItem>
             <SongTitle>Surrounded (interlude) - Dhaamin Sideeq - Max Rosenberg (Guitar)</SongTitle>
             <br />
-            <SurroundPlayer></SurroundPlayer>
+            <Player sound="surround.mp3"></Player>
           </MusicItem>
         </ul>
         
