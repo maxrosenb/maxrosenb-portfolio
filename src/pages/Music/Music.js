@@ -21,7 +21,7 @@ const Music = ({ user }) => {
           <Paragraph>I am constantly working on new music. Here's some of what I've been working on lately!</Paragraph>
         </div>
         <div>
-          <Paragraph>Check out my 2018 full-length album Treats <a href="ballersanonymous.bandcamp.com/releases">here</a>.</Paragraph>
+          <Paragraph>Check out my 2018 full-length album Treats <a href="https://www.ballersanonymous.bandcamp.com/releases">here</a>.</Paragraph>
         </div>
 
         <ul>
