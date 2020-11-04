@@ -7,3 +7,10 @@ export const ProfileLink = styled.li`
   display: inline-block;
   font-size: 18px;
 `
+
+export const DiscordWidget = styled.p`
+  white-space: pre-wrap;
+  line-height:1.6;
+  padding:10 20px;
+  margin: 10px;
+`;

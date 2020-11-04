@@ -15,6 +15,10 @@ export const SkillContainer = styled.div`
   margin-top: 1.2rem;
 `
 
+export const DiscordContainer = styled.div`
+margin-top: 1.2rem;
+`
+
 export const ViewGitLink = styled.a`
   display: flex;
   text-decoration: none;
