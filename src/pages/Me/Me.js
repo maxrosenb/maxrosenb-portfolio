@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Paragraph, Pill } from '../../styles';
-import { ProfileLink,DiscordWidget } from './styles';
+import { ProfileLink, DiscordWidget, DiscordParagraph } from './styles';
 
 const Me = ({ user }) => {
   return (
@@ -33,13 +33,13 @@ const Me = ({ user }) => {
       </div>
       <div >
         <SectionTitle>Discord</SectionTitle>
-        <Paragraph>Southeast Asian languages, Burmese in particular, are a huge passon of mine. {"\n"} 
+        <DiscordParagraph>Southeast Asian languages, Burmese in particular, are a huge passon of mine. {"\n"} 
           If you're into language exchange, or if you are simply interested in learning a bit about something new, {"\n"}check out my SEA-English
           language exchange Discord server! 125 members strong and growing.
-        </Paragraph>
+        </DiscordParagraph>
         <DiscordWidget>
           <iframe title="discord-server" src="https://discord.com/widget?id=653748714044784660&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-          </DiscordWidget>
+        </DiscordWidget>
       </div>
     </Layout>
   );
