@@ -31,7 +31,7 @@ class MaxMap extends Component {
         googleMapsApiKey="AIzaSyBd77gbj5S_VLrcTBXdgWZKMvj16slsq7Y"
       >
           
-        <h1 style={{margin:'0.4rem'}}>Some places I've been to and like.</h1> 
+        <h1 style={{margin:'0.4rem'}}>Some places I've been to and like</h1> 
         <div style={box}>
         <div style={{display: 'flex', justifyContent: 'center',  margin: '20px', paddingLeft: '1rem'}}>
         <GoogleMap
