@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Work from './Work';
 import Education from './Education';
 import Music from './Music';
+import Maps from './Maps';
 
 const Pages = ({ user }) => {
   return (
@@ -24,6 +25,9 @@ const Pages = ({ user }) => {
         </Route>
         <Route path="/music">
           <Music user={user}/>
+        </Route>
+        <Route path="/maps">
+          <Maps user={user}/>
         </Route>
       </Switch>
     </Router>

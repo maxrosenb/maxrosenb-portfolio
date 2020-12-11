@@ -10,6 +10,7 @@ const items = [
   { name: 'Work', path: '/work' },
   { name: 'Education', path: '/education' },
   { name: 'Music', path: '/music' },
+  { name: 'Maps', path: '/maps' },
 ];
 
 const Sidebar = () => {
