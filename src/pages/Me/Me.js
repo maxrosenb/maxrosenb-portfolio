@@ -1,7 +1,7 @@
-import React from 'react';
-import Layout from '../../components/Layout';
-import { SectionTitle, Paragraph, Pill } from '../../styles';
-import { ProfileLink, DiscordWidget, DiscordParagraph } from './styles';
+import React from "react";
+import Layout from "../../components/Layout";
+import { SectionTitle, Paragraph, Pill } from "../../styles";
+import { ProfileLink, DiscordWidget, DiscordParagraph } from "./styles";
 
 const Me = ({ user }) => {
   return (
@@ -13,7 +13,7 @@ const Me = ({ user }) => {
       <div>
         <SectionTitle>Skills</SectionTitle>
         <div>
-          {user.skills.map(skill => (
+          {user.skills.map((skill) => (
             <Pill key={skill.name}>{skill.name}</Pill>
           ))}
         </div>
@@ -23,7 +23,7 @@ const Me = ({ user }) => {
         <ul>
           {user.basics.profiles.map((profile, i) => (
             <ProfileLink key={profile.network}>
-              {i !== 0 && ' | '}
+              {i !== 0 && " | "}
               <a href={profile.url} target="_blank" rel="noreferrer noopener">
                 {profile.network}
               </a>
@@ -31,14 +31,26 @@ const Me = ({ user }) => {
           ))}
         </ul>
       </div>
-      <div >
+      <div>
         <SectionTitle>Discord</SectionTitle>
-        <DiscordParagraph>Southeast Asian languages, Burmese in particular, are a huge passon of mine. {"\n"} 
-          If you're into language exchange, or if you are simply interested in learning a bit about something new, {"\n"}check out my SEA-English
-          language exchange Discord server! 125 members strong and growing. 
+        <DiscordParagraph>
+          {" "}
+          Learning Southeast Asian languages, Burmese in particular, is a passon
+          of mine. {"\n"}
+          If you're into language exchange, or if you are simply interested in
+          learning a bit about something new, {"\n"}check out my SEA-English
+          language exchange Discord server! 125 members strong and growing.
         </DiscordParagraph>
         <DiscordWidget>
-          <iframe title="discord-server" src="https://discord.com/widget?id=653748714044784660&theme=dark" width="350" height="500" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <iframe
+            title="discord-server"
+            src="https://discord.com/widget?id=653748714044784660&theme=dark"
+            width="350"
+            height="500"
+            allowtransparency="true"
+            frameBorder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
         </DiscordWidget>
       </div>
     </Layout>
