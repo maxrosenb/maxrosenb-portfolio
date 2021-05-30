@@ -35,11 +35,12 @@ const Me = ({ user }) => {
         <SectionTitle>Discord</SectionTitle>
         <DiscordParagraph>
           {" "}
-          Learning Southeast Asian languages, Burmese in particular, is a passon
-          of mine. {"\n"}
+          Learning languages, Burmese in particular, is an important passon of
+          mine. {"\n"}
           If you're into language exchange, or if you are simply interested in
           learning a bit about something new, {"\n"}check out my SEA-English
-          language exchange Discord server! 125 members strong and growing.
+          language exchange Discord server! We are 125 members strong and
+          growing.
         </DiscordParagraph>
         <DiscordWidget>
           <iframe

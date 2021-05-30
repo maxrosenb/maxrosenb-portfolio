@@ -1,14 +1,14 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { ArrowRight16 } from '@carbon/icons-react';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import { ArrowRight16 } from "@carbon/icons-react";
 
-import { HeaderContainer, Header, Image, ViewResumeLink } from './styles';
+import { HeaderContainer, Header, Image, ViewResumeLink } from "./styles";
 
 const UserHeader = ({ user }) => {
   const location = useLocation();
 
   return (
-    <HeaderContainer isHome={location.pathname === '/'}>
+    <HeaderContainer isHome={location.pathname === "/"}>
       <Header>
         <Image src={user.basics.picture} />
         <div>
@@ -28,14 +28,15 @@ const UserHeader = ({ user }) => {
         </div>
       </Header>
       <div>
-        <ViewResumeLink
-          href={`https://gitconnected.com/${user.basics.username}/resume`}
+        {/* <ViewResumeLink
+          // href={`https://gitconnected.com/${user.basics.username}/resume`}
+          to="/music"
           target="_blank"
           rel="noopener noreferrer"
         >
           <span>View Résumé</span>
           <ArrowRight16 />
-        </ViewResumeLink>
+        </ViewResumeLink> */}
       </div>
     </HeaderContainer>
   );
