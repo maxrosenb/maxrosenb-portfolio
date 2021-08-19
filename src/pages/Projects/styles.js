@@ -1,26 +1,30 @@
-import styled from 'styled-components'
-import { white } from '@carbon/colors'
+import styled from "styled-components";
+import { white } from "@carbon/colors";
 
 export const ProjectItem = styled.li`
   margin-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid ${white};
-`
+`;
 
 export const ProjectTitle = styled.h4`
   font-weight: bold;
-`
+`;
 
 export const SkillContainer = styled.div`
   margin-top: 1.2rem;
-`
+`;
 
 export const DiscordContainer = styled.div`
-margin-top: 1.2rem;
-`
+  margin-top: 1.2rem;
+`;
 
 export const ViewGitLink = styled.a`
   display: flex;
+  width: 15%;
+  @media (max-width: 768px) {
+    width: 40%;
+  }
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font-weight: bold;

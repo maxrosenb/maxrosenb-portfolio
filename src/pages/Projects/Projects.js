@@ -1,7 +1,12 @@
-import React from 'react';
-import Layout from '../../components/Layout';
-import { SectionTitle, Pill } from '../../styles';
-import { ProjectItem, ProjectTitle, SkillContainer, ViewGitLink } from './styles';
+import React from "react";
+import Layout from "../../components/Layout";
+import { SectionTitle, Pill } from "../../styles";
+import {
+  ProjectItem,
+  ProjectTitle,
+  SkillContainer,
+  ViewGitLink,
+} from "./styles";
 
 const Projects = ({ user }) => {
   return (
@@ -20,11 +25,11 @@ const Projects = ({ user }) => {
               </SkillContainer>
               <div>
                 <ViewGitLink
-                href={`${project.githubUrl}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                  href={`${project.githubUrl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                <span>view on GitHub</span>
+                  <p>View on GitHub</p>
                 </ViewGitLink>
               </div>
             </ProjectItem>
