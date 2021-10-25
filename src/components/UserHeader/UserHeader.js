@@ -1,7 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-
-import { HeaderContainer, Header, Image } from "./styles";
+import { ViewResumeLink, HeaderContainer, Header, Image } from "./styles";
 
 const UserHeader = ({ user }) => {
   const location = useLocation();
@@ -27,15 +26,15 @@ const UserHeader = ({ user }) => {
         </div>
       </Header>
       <div>
-        {/* <ViewResumeLink
-          // href={`https://gitconnected.com/${user.basics.username}/resume`}
+        <ViewResumeLink
+          href={`/resume`}
           to="/music"
           target="_blank"
           rel="noopener noreferrer"
         >
           <span>View Résumé</span>
-          <ArrowRight16 />
-        </ViewResumeLink> */}
+          {/* <ArrowRight16 /> */}
+        </ViewResumeLink>
       </div>
     </HeaderContainer>
   );

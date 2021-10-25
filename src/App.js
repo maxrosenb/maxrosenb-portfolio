@@ -1,14 +1,14 @@
-import React from 'react';
-import Pages from './pages'
+import React from "react";
+import Pages from "./pages";
 //import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   const [user, setUser] = React.useState(null);
   React.useEffect(() => {
-    fetch('https://gitconnected.com/v1/portfolio/maxrosenb')
-      .then(res => res.json())
-      .then(user => {
+    fetch("https://gitconnected.com/v1/portfolio/maxrosenb")
+      .then((res) => res.json())
+      .then((user) => {
         setUser(user);
       });
   }, []);

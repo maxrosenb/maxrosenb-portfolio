@@ -1,11 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Me from './Me';
-import Projects from './Projects';
-import Work from './Work';
-import Education from './Education';
-import Music from './Music';
-import Maps from './Maps';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Me from "./Me";
+import Projects from "./Projects";
+import Work from "./Work";
+import Education from "./Education";
+import Music from "./Music";
+import Maps from "./Maps";
+import Resume from "./Resume";
 
 const Pages = ({ user }) => {
   return (
@@ -24,10 +25,13 @@ const Pages = ({ user }) => {
           <Education user={user} />
         </Route>
         <Route path="/music">
-          <Music user={user}/>
+          <Music user={user} />
         </Route>
         <Route path="/maps">
-          <Maps user={user}/>
+          <Maps user={user} />
+        </Route>
+        <Route path="/resume">
+          <Resume user={user} />
         </Route>
       </Switch>
     </Router>
