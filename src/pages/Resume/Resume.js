@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-modal";
-import Layout from "../../components/Layout";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
+import maxResume from "./maxresume.pdf";
 
 const customStyles = {
   content: {
@@ -16,43 +16,18 @@ const customStyles = {
 };
 
 const Resume = ({ user }) => {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-    // document.getElementById("root").style.filter = "blur(10px)";
-  }
-
-  const [modalIsOpen, setIsOpen] = React.useState(true);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-
-    document.getElementById("root").style.opacity = 1;
-    document.body.style.backgroundColor = "#000000";
-  }
 
   return (
     <div>
       <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
+        isOpen={true}
         style={customStyles}
         contentLabel="Example Modal"
         shouldCloseOnOverlayClick={false}
       >
-        <Document
-          file="https://ipfs.io/ipfs/QmbRPqtwSJ8stVCyecSbcig83wS5sAC1FwqZj3F4KNzPwn"
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
+        <Document file={maxResume}>
+          <Page pageNumber={1} />
         </Document>
       </Modal>
     </div>

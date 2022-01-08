@@ -1,7 +1,25 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { SectionTitle, Paragraph, Pill } from "../../styles";
-import { ProfileLink, DiscordWidget, DiscordParagraph } from "./styles";
+import { SectionTitle, Paragraph } from "../../styles";
+import {
+  ProfileLink,
+  DiscordWidget,
+  DiscordParagraph,
+  DevBadge,
+  BadgeTitle,
+} from "./styles";
+
+const devBadgeLinks = [
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg",
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+];
 
 const Me = ({ user }) => {
   return (
@@ -11,12 +29,10 @@ const Me = ({ user }) => {
         <Paragraph>{user.basics.summary}</Paragraph>
       </div>
       <div>
-        <SectionTitle>Skills</SectionTitle>
-        <div>
-          {user.skills.map((skill) => (
-            <Pill key={skill.name}>{skill.name}</Pill>
-          ))}
-        </div>
+        <BadgeTitle>Languages, Libraries, and Frameworks</BadgeTitle>
+        {devBadgeLinks.map((link, index) => {
+          return <DevBadge key={index} src={link} alt="devicon" />;
+        })}
       </div>
       <div>
         <SectionTitle>Profiles</SectionTitle>

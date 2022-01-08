@@ -16,6 +16,7 @@
     "google-maps-react": "^2.0.6",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bandcamp": "^1.1.5",
     "react-dom": "^16.13.1",
     "react-h5-audio-player": "^3.3.2",
     "react-modal": "^3.14.3",
@@ -24,6 +25,7 @@
     "react-scripts": "3.4.3",
     "react-use-audio-player": "^1.0.0",
     "styled-components": "^5.1.1",
+    "svg-inline-loader": "^0.8.2",
     "yarn": "^1.22.10"
   },
   "scripts": {

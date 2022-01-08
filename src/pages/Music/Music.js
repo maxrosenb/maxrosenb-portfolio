@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import { SectionTitle, Paragraph } from "../../styles";
 import { SongTitle, MusicItem } from "./styles";
 import AudioPlayer from "react-h5-audio-player";
+import BandcampPlayer from "react-bandcamp";
 
 const Player = ({ sound }) => (
   <AudioPlayer
@@ -23,10 +24,7 @@ const Music = ({ user }) => {
         </Paragraph>
       </div>
       <div>
-        <Paragraph>
-          Check out my 2018 full-length album Treats{" "}
-          <a href="https://www.ballersanonymous.bandcamp.com/releases">here</a>.
-        </Paragraph>
+        <BandcampPlayer album="2705074966" tracklist={false} artwork="small" />
       </div>
 
       <ul>
@@ -39,6 +37,11 @@ const Music = ({ user }) => {
           <SongTitle>Poster</SongTitle>
           <br />
           <Player sound="poster.mp4"></Player>
+        </MusicItem>
+        <MusicItem>
+          <SongTitle>Don't Look Back in Anger</SongTitle>
+          <br />
+          <Player sound="anger.mp4"></Player>
         </MusicItem>
         <MusicItem>
           <SongTitle>Come Around</SongTitle>
