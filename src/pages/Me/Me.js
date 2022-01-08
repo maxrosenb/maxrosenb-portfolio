@@ -17,7 +17,6 @@ const devBadgeLinks = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
 ];
 
